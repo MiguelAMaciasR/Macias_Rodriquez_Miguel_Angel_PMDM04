@@ -27,4 +27,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/bottom_nav_menu" />
 
+    <!-- Overlay de la guía (transparent) -->
+    <FrameLayout
+        android:id="@+id/overlayContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:focusable="true"/>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,7 @@
+
 package dam.pmdm.spyrothedragon
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -21,6 +23,20 @@ class MainActivity : AppCompatActivity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+
+
+        val prefs = getSharedPreferences("app_prefs", MODE_PRIVATE)
+        val mostrada = prefs.getBoolean("guia_mostrada", false)
+
+        if (!mostrada) {
+
+            supportFragmentManager.beginTransaction()
+                .add(R.id.overlayContainer, GuiaInicioFragment(), )
+                .commit()
+        }
+
+
 
         val navHostFragment: Fragment? =
             supportFragmentManager.findFragmentById(R.id.navHostFragment)
@@ -49,6 +65,8 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }
+
+
     }
 
     private fun selectedBottomMenu(menuItem: MenuItem): Boolean {

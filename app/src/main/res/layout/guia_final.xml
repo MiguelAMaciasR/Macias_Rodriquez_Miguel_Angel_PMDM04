@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_overlay">
+
+    <Button
+        android:id="@+id/btnSaltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/saltar5"
+        android:layout_margin="16dp"
+        android:layout_gravity="top|end"/>
+
+    <LinearLayout
+        android:id="@+id/bocadillo"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/bocadillo">
+
+        <TextView
+            android:id="@+id/txtResumen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bocadillofinal"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btnFinalizar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/empezar_a_usar_la_app"
+            android:layout_gravity="end"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+
+</FrameLayout>

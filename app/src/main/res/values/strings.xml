@@ -4,6 +4,28 @@
     <string name="characters">Personajes</string>
     <string name="collectibles">Coleccionables</string>
     <string name="title_about">Acerca de</string>
-    <string name="text_about">Aplicación desarrollada por \n <b>Lindsay Barrero Martínez.</b></string>
+    <string name="text_about">Aplicación desarrollada por \n <b>Miguel Angel Macias Rodriguez.</b></string>
     <string name="accept">Aceptar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="saltar">Saltar</string>
+    <string name="bienvenido">BIENVENIDO</string>
+    <string name="bocadilloinicio">Prepárate para explorar el mundo mágico de esta aplicación inspirada en SPYRO.\n\nAquí aprenderás a navegar por pestañas llenas de dragones, mundos fascinantes y montones de tesoros brillantes.\n\n¿Listo para empezar?</string>
+    <string name="textopantalla1">Aquí aprenderás a navegar por las diferentes secciones de la aplicación y descubrir todo su contenido.\n\n¿Listo para empezar?</string>
+    <string name="botoncomenzar">COMENZAR</string>
+    <string name="saltar2">Saltar</string>
+    <string name="bocadillo1">Aquí encontrarás todos los coleccionables: gemas, huevos de dragón y objetos especiales. ¡Completa tu colección!.</string>
+    <string name="siguiente1">Siguiente</string>
+    <string name="saltar1">Saltar</string>
+    <string name="bocadillo2">En esta sección podrás descubrir todos los personajes del universo de Spyro. Toca cada uno para ver su información y conocer mejor sus habilidades, historia y características.</string>
+    <string name="siguiente">Siguiente</string>
+    <string name="saltar3">Saltar</string>
+    <string name="bocadillo">Aquí podrás explorar todos los mundos del universo de Spyro. Selecciona uno para descubrir sus niveles y secretos.</string>
+    <string name="siguiente2">Siguiente</string>
+    <string name="saltar4">Saltar</string>
+    <string name="siguiente3">Siguiente</string>
+    <string name="bocadillo3">Pulsa este icono para ver información sobre la aplicación, su funcionamiento y sus créditos.</string>
+    <string name="saltar5">Saltar</string>
+    <string name="bocadillofinal">¡Guía completada!\n\n✔ Explorar los personajes\n✔ Descubrir los mundos\n✔ Consultar los coleccionables\n✔ Acceder a la información\n\nAhora estás listo para comenzar tu aventura.</string>
+    <string name="empezar_a_usar_la_app">Empezar a usar la app</string>
 </resources>

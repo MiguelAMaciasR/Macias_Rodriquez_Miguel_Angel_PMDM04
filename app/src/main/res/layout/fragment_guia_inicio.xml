@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_guia">
+
+    <Button
+        android:id="@+id/btnSaltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/saltar"
+        android:layout_margin="16dp"
+        android:layout_gravity="top|end"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="24dp">
+
+        <!-- TÍTULO -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bienvenido"
+                android:textColor="@android:color/white"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="16dp"/>
+
+        <!-- TEXTO INTRO -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bocadilloinicio"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:textStyle="bold"/>
+
+        <!-- IMAGEN -->
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/spyro_portada"
+                android:adjustViewBounds="true"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- TEXTO PARTE 2 (EL QUE QUIERES AÑADIR) -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textopantalla1"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- BOTÓN DIAMANTE -->
+            <FrameLayout
+                android:id="@+id/btnComenzar"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:focusable="true">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/gems" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/botoncomenzar"
+                android:textSize="13sp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

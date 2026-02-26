@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SpyroTheDragon"
         tools:targetApi="31">
+
+        <activity android:name=".VideoEasterEggActivity" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
