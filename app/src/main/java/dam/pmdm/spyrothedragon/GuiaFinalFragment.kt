@@ -35,9 +35,9 @@ class GuiaFinalFragment : Fragment(R.layout.guia_final) {
         // Inicializar sonido bocadillo
 
         sonidoEnd = MediaPlayer.create(requireContext(), R.raw.end1)
-        // ===============================
+        // -------------------------
         // Bloquear botón atrás
-        // ===============================
+        // -------------------------
         requireActivity().onBackPressedDispatcher.addCallback(
             viewLifecycleOwner,
             object : OnBackPressedCallback(true) {
@@ -47,9 +47,9 @@ class GuiaFinalFragment : Fragment(R.layout.guia_final) {
             }
         )
 
-        // ===============================
+        // -------------------------
         // Animación especial de cierre
-        // ===============================
+        // -------------------------
         val bocadillo = view.findViewById<View>(R.id.bocadillo)
 
         // Estado inicial más dramático
@@ -75,9 +75,9 @@ class GuiaFinalFragment : Fragment(R.layout.guia_final) {
                     .start()
             }
             .start()
-        // ===============================
+        // -------------------------
         // Botón Finalizar comenzar app
-        // ===============================
+        // -------------------------
         view.findViewById<Button>(R.id.btnFinalizar).setOnClickListener {
 
             sonido_final.start()

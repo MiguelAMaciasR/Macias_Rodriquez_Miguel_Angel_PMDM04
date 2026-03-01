@@ -31,9 +31,9 @@ class GuiaInfoFragment : Fragment(R.layout.guia_info) {
         // Inicializar sonido
         button_click = MediaPlayer.create(requireContext(), R.raw.button_click)
 
-        // ===============================
+        // -------------------------
         // Animación del bocadillo (entrada con rebote)
-        // ===============================
+        // -------------------------
         val bocadillo = view.findViewById<View>(R.id.bocadillo)
 
         // Estado inicial
@@ -58,9 +58,9 @@ class GuiaInfoFragment : Fragment(R.layout.guia_info) {
             }
             .start()
 
-        // ===============================
+        // -------------------------
         // Bloquear botón atrás durante la guía
-        // ===============================
+        // -------------------------
         requireActivity().onBackPressedDispatcher.addCallback(
             viewLifecycleOwner,
             object : OnBackPressedCallback(true) {
@@ -70,9 +70,9 @@ class GuiaInfoFragment : Fragment(R.layout.guia_info) {
             }
         )
 
-        // ===============================
-        // Botón Siguiente → Pantalla Final
-        // ===============================
+        // -------------------------
+        // Botón Siguiente  Pantalla Final
+        // -------------------------
         view.findViewById<View>(R.id.btnSiguiente).setOnClickListener {
 
             button_click.start()
@@ -82,9 +82,9 @@ class GuiaInfoFragment : Fragment(R.layout.guia_info) {
                 .commit()
         }
 
-        // ===============================
-        // Botón Saltar → cerrar guía
-        // ===============================
+        // -------------------------
+        // Botón Saltar  cerrar guía
+        // -------------------------
         view.findViewById<Button>(R.id.btnSaltar).setOnClickListener {
 
             val prefs = requireActivity()

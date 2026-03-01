@@ -32,16 +32,16 @@ class GuiaColeccionablesFragment : Fragment(R.layout.guia_coleccionables) {
         // Inicializar sonido
         button_click = MediaPlayer.create(requireContext(), R.raw.button_click)
 
-        // ===============================
+        // -------------------------
         // Cambiar automáticamente al tab Coleccionables
-        // ===============================
+        // -------------------------
         requireActivity()
             .findNavController(R.id.navHostFragment)
             .navigate(R.id.navigation_collectibles)
 
-        // ===============================
+        // -------------------------
         // Animación del bocadillo (entrada con rebote)
-        // ===============================
+        // -------------------------
         val bocadillo = view.findViewById<View>(R.id.bocadillo)
 
         // Estado inicial
@@ -67,9 +67,9 @@ class GuiaColeccionablesFragment : Fragment(R.layout.guia_coleccionables) {
             }
             .start()
 
-        // ===============================
+        // -------------------------
         // Bloquear botón atrás durante la guía
-        // ===============================
+        // -------------------------
         requireActivity().onBackPressedDispatcher.addCallback(
             viewLifecycleOwner,
             object : OnBackPressedCallback(true) {
@@ -79,9 +79,9 @@ class GuiaColeccionablesFragment : Fragment(R.layout.guia_coleccionables) {
             }
         )
 
-        // ===============================
+        //-------------------------
         // Botón Siguiente Pantalla Info
-        // ===============================
+        // -------------------------
         view.findViewById<View>(R.id.btnSiguiente).setOnClickListener {
 
             button_click.start()
@@ -91,9 +91,9 @@ class GuiaColeccionablesFragment : Fragment(R.layout.guia_coleccionables) {
                 .commit()
         }
 
-        // ===============================
+        // -------------------------
         // Botón Saltar cerrar guía
-        // ===============================
+        // -------------------------
         view.findViewById<Button>(R.id.btnSaltar).setOnClickListener {
 
             val prefs = requireActivity()

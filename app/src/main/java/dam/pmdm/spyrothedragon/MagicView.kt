@@ -41,17 +41,17 @@ class MagicView(context: Context) : View(context) {
         val centerX = width / 2f
         val centerY = height / 2f
 
-        // 1️⃣ Cambio de color mágico (ciclo)
+        // 1 0Cambio de color mágico (ciclo)
         hue += 2f
         if (hue > 360) hue = 0f
         val hsv = floatArrayOf(hue, 1f, 1f)
         val color = Color.HSVToColor(alpha, hsv)
 
-        // 2️⃣ Brillo progresivo
+        // 2 Brillo progresivo
         alpha += 4
         if (alpha > 255) alpha = 120
 
-        // 3️⃣ Escala controlada (pequeña animación de pulso)
+        // 3️ Escala controlada (pequeña animación de pulso)
         escala += 0.003f
         if (escala > 0.5f) escala = 0.4f
 
@@ -65,7 +65,7 @@ class MagicView(context: Context) : View(context) {
         paint.alpha = alpha
         canvas.drawBitmap(bitmap, null, dest, paint)
 
-        // 4️⃣ Ondas de energía
+        // 4 Ondas de energía
         waveRadius += 6f
         if (waveRadius > 300f) waveRadius = 0f
 
@@ -75,7 +75,7 @@ class MagicView(context: Context) : View(context) {
         canvas.drawCircle(centerX, centerY, waveRadius, wavePaint)
         canvas.drawCircle(centerX, centerY, waveRadius + 60, wavePaint)
 
-        // 5️⃣ Destellos mágicos
+        // 5 Destellos mágicos
         sparklePaint.color = Color.WHITE
         sparklePaint.alpha = alpha
 

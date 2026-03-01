@@ -34,9 +34,9 @@ class GuiaPersonajesFragment : Fragment(R.layout.guia_personajes) {
         // Inicializamos el sonido del botón
         button_click = MediaPlayer.create(requireContext(), R.raw.button_click)
 
-        // ===============================
+        // -------------------------
         // Animación del bocadillo (entrada)
-        // ===============================
+        // -------------------------
         val bocadillo = view.findViewById<View>(R.id.bocadillo)
 
         // Estado inicial (fuera de pantalla y pequeño)
@@ -62,9 +62,9 @@ class GuiaPersonajesFragment : Fragment(R.layout.guia_personajes) {
             }
             .start()
 
-        // ===============================
+        // -------------------------
         // Bloquear botón atrás durante la guía
-        // ===============================
+        // -------------------------
         requireActivity().onBackPressedDispatcher.addCallback(
             viewLifecycleOwner,
             object : OnBackPressedCallback(true) {
@@ -74,9 +74,9 @@ class GuiaPersonajesFragment : Fragment(R.layout.guia_personajes) {
             }
         )
 
-        // ===============================
-        // Botón Siguiente → Ir a Mundos
-        // ===============================
+        // -------------------------
+        // Botón Siguiente Ir a Mundos
+        // -------------------------
         view.findViewById<Button>(R.id.btnSiguiente).setOnClickListener {
 
             button_click.start()
@@ -92,9 +92,9 @@ class GuiaPersonajesFragment : Fragment(R.layout.guia_personajes) {
                 .commit()
         }
 
-        // ===============================
-        // Botón Saltar → Cerrar guía
-        // ===============================
+        // -------------------------
+        // Botón Saltar Cerrar guía
+        // -------------------------
         view.findViewById<Button>(R.id.btnSaltar).setOnClickListener {
 
             val prefs = requireActivity()
@@ -109,9 +109,9 @@ class GuiaPersonajesFragment : Fragment(R.layout.guia_personajes) {
                 .commit()
         }
 
-        // ===============================
+        // -------------------------
         // Easter Egg: pulsación larga sobre Ripto
-        // ===============================
+        // -------------------------
         val ripto = view.findViewById<ImageView>(R.id.ripto)
 
         ripto.setOnLongClickListener {

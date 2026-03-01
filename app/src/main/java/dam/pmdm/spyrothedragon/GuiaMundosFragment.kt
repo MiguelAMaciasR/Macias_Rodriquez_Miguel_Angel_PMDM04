@@ -53,9 +53,9 @@ class GuiaMundosFragment : Fragment(R.layout.guia_mundos) {
         button_click = MediaPlayer.create(requireContext(), R.raw.button_click)
         // Inicializar sonido bocadillo
         sonidoIntro = MediaPlayer.create(requireContext(), R.raw.intromenu)
-        // ===============================
+        // -------------------------
         // Animación del bocadillo (entrada suave)
-        // ===============================
+        // -------------------------
         val bocadillo = view.findViewById<View>(R.id.bocadillo)
 
         bocadillo.alpha = 0f
@@ -75,9 +75,9 @@ class GuiaMundosFragment : Fragment(R.layout.guia_mundos) {
             }
             .start()
 
-        // ===============================
+        // -------------------------
         // Bloquear botón atrás durante la guía
-        // ===============================
+        // -------------------------
         requireActivity().onBackPressedDispatcher.addCallback(
             viewLifecycleOwner,
             object : OnBackPressedCallback(true) {
@@ -87,9 +87,9 @@ class GuiaMundosFragment : Fragment(R.layout.guia_mundos) {
             }
         )
 
-        // ===============================
+        // -------------------------
         // Botón Siguiente Coleccionables
-        // ===============================
+        // -------------------------
         view.findViewById<View>(R.id.btnSiguiente).setOnClickListener {
 
             button_click.start()
@@ -105,9 +105,9 @@ class GuiaMundosFragment : Fragment(R.layout.guia_mundos) {
                 .commit()
         }
 
-        // ===============================
+        // -------------------------
         // Botón Saltar cerrar guía completamente
-        // ===============================
+        // -------------------------
         view.findViewById<Button>(R.id.btnSaltar).setOnClickListener {
 
             val prefs = requireActivity()
@@ -120,9 +120,9 @@ class GuiaMundosFragment : Fragment(R.layout.guia_mundos) {
                 .commit()
         }
 
-        // ===============================
+        // -------------------------
         // Easter Egg: Triple pulsación en Mundo 1
-        // ===============================
+        // -------------------------
         val mundo1 = view.findViewById<ImageView>(R.id.mundo1)
 
         mundo1.setOnClickListener {
@@ -176,3 +176,7 @@ class GuiaMundosFragment : Fragment(R.layout.guia_mundos) {
         sonidoIntro.release()
     }
 }
+
+
+
+
